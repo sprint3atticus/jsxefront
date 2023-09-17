@@ -6,11 +6,11 @@ function Nav() {
 
   return (
     <section className={styles.nav}>
-      <Link to="home" className={tlink}>Home</Link>
-      <Link to="contato" className={tlink}>Contato</Link>
-      <Link to="calculadora" className={tlink}>Calculadora</Link>
-      <Link to="sobre" className={tlink}>Sobre</Link>
-      <Link to="error" className={tlink}>Error</Link>
+      <Link to="home" className={styles.tlink}>Home</Link>
+      <Link to="contato" className={styles.tlink}>Contato</Link>
+      <Link to="calculadora" className={styles.tlink}>Calculadora</Link>
+      <Link to="sobre" className={styles.tlink}>Sobre</Link>
+      <Link to="error" className={styles.tlink}>Error</Link>
     </section>
   );
 }
