@@ -40,4 +40,4 @@ function Home() {
   );
 }
 
-export default MeuComponente;
+export default Home;
