@@ -5,7 +5,7 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './componentes/Home.jsx';
 import Contato from './componentes/Contato.jsx';
-import sobreNos from './componentes/sobreNos.jsx';
+import Sobre from './componentes/Sobre.jsx';
 import Calculadora from './componentes/Calculadora.jsx';
 import Error from './componentes/Error.jsx';
 
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: '/home', element: <Home /> },
       { path: '/contato', element: <Contato /> },
-      { path: '/sobreNos', element: <sobreNos /> },
+      { path: '/sobre', element: <Sobre /> },
       { path: '/cacluladora', element: <Calculadora />},
     ],
   },

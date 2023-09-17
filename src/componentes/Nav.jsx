@@ -9,7 +9,7 @@ function Nav() {
       <Link to="home" className={tlink}>Home</Link>
       <Link to="contato" className={tlink}>Contato</Link>
       <Link to="calculadora" className={tlink}>Calculadora</Link>
-      <Link to="sobrenos" className={tlink}>sobreNos</Link>
+      <Link to="sobre" className={tlink}>Sobre</Link>
       <Link to="error" className={tlink}>Error</Link>
     </section>
   );

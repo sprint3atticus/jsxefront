@@ -1,6 +1,6 @@
 import {} from 'react'
 
-function SobreNos() {
+function Sobre() {
 
   return (
     <>
@@ -9,4 +9,4 @@ function SobreNos() {
   )
 }
 
-export default SobreNos
+export default Sobre
