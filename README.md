@@ -1,4 +1,4 @@
-# Sprint 3 Web Front
+# Sprint 3 Web Front 1ESPY
 
 - Gabriela Marsiglia RM551237
 - Gabriel Toledo RM551654
