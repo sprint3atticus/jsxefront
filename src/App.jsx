@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css'
 import Home from './componentes/Home.jsx';
 import Contato from './componentes/Contato.jsx';
@@ -12,14 +12,16 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/home" component={Home} />
-        <Route path="/contato" component={Contato} />
-        <Route path="/sobre" component={Sobre} />
-        <Route path="/calculadora" component={Calculadora} />
-        <Route component={Error} />
-      </Switch>
+      <Nav/>
+      <Routes>
+        <Route path="/" exact component={<Home/>}/>
+        <Route path="/home" component={<Home/>}/>
+        <Route path="/contato" component={<Contato/>}/>
+        <Route path="/sobre" component={<Sobre/>}/>
+        <Route path="/calculadora" component={<Calculadora/>}/>
+        <Route component={<Error/>}/>
+      </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }
