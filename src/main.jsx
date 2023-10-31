@@ -1,4 +1,4 @@
-import React from 'react'
+import {} from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css';
@@ -12,8 +12,8 @@ import Error from './componentes/Error.jsx';
 const router = createBrowserRouter([
   {
     
-    path: '/',
-    element: <App />,
+    path: '/', element: <App />,
+    
     
     errorElement: <Error />,
 
@@ -23,12 +23,13 @@ const router = createBrowserRouter([
       { path: '/contato', element: <Contato /> },
       { path: '/sobre', element: <Sobre /> },
       { path: '/caculadora', element: <Calculadora />},
-    ],
-  },
-]);
+    ]
+  }
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+  <>
+    <RouterProvider router={router}/>
+
+  </>,
+);
